@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+    <nav class="nav-logo">
+        <div class="container-logo">
+            <img src="logo1.jpeg" class="logo">
+            <h2>Эко туризм - Митрандир - ваш персональный гид</h2>
+        </div>
+        
+        <button class="burger-menu" id="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
 
+    <nav class="nav-item">
+        <div class="container-menu">
+            <a class="name-menu" href="#findtext2">О нас</a>
+            <a class="nav-link active" aria-current="page" href="#findtext1">Горящие туры</a>
+            <a class="nav-link" href="#">Лето 2026</a>
+            <a class="nav-link" href="#">Акции</a>
+            <a class="nav-link" href="#findtext">Контакты</a>
+        </div>
+    </nav>
+</header>
+
+    <section class="container-form">
+    <div class="form">
+        <form action="#" method="post" target="_blank" class="tour-search-form">
+            <div class="form-title">
+                <h2>🌍Найти идеальный эко-тур🍃</h2>
+                <p>Планируйте свое путешествие с Митрандиром🧙‍♂️</p>
+            </div>
+            
+    
+            <div class="horizontal-form-container">
+           
+                <div class="form-field">
+                    <div class="field-label">Откуда летим</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="text" class="form-input" placeholder="Хоббитон..">
+                    </div>
+                </div>
+                
+              
+                <div class="form-field">
+                    <div class="field-label">Куда летим</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="text" class="form-input" placeholder="Ривендел">
+                    </div>
+                </div>
+                
+               
+                <div class="form-field">
+                    <div class="field-label">Дата вылета</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="date" class="form-input">
+                    </div>
+                </div>
+                
+               
+                <div class="form-field">
+                    <div class="field-label">Количество ночей</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="number" class="form-input" min="1" max="60" value="1">
+                    </div>
+                </div>
+                
+               
+                <div class="form-field">
+                    <div class="field-label">Взрослые</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="number" class="form-input" min="1" max="100" value="1">
+                    </div>
+                </div>
+          
+                <div class="form-field">
+                    <div class="field-label">Дети</div>
+                    <div class="field-container">
+                        <div class="dotted-line"></div>
+                        <input type="number" class="form-input" min="0" max="100" value="0">
+                    </div>
+                </div>
+          
+                <div class="form-field search-button-container">
+                    <div class="field-label" style="visibility: hidden;">Кнопка</div>
+                    <button type="submit" class="search-btn">
+                        <span class="search-icon">🔍</span>
+                        Найти
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="form-submit">
+                <input type="checkbox" id="privacy">
+                <label for="privacy">* Нажимая галочку, вы соглашаетесь с политикой конфиденциальности</label>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <section class="populardirection">
+    <h2 class="popitem">Самые популярные направления для туризма</h2>
+    
+    <div class="cards-container">
+        <div class="card1">
+            <img src="hiir.jpg" class="card-img-top" alt="Шир - Хоббитон">
+            <div class="card-body">
+                <h5 class="card-title">Шир - Хоббитон</h5>
+                <p class="card-text">Зеленые луга, гостеприимные местные жители, море вкусной еды! Отдых в тишине и спокойствии круглый год! <em>(Не стоит открывать дверь волшебникам)</em></p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img src="cads3.jpg" class="card-img-top" alt="Мория - в гости к гномам">
+            <div class="card-body">
+                <h5 class="card-title">Мория - в гости к гномам</h5>
+                <p class="card-text">Устали от дневного света? Хочется просто копаться в земле и искать драгоценные камни? Тогда вам пора навестить радушных гномов! <em>(про радушие я пошутил)</em></p>
+            </div>
+        </div>
+
+        <div class="card3">
+            <img src="ards2.jpg" class="card-img-top" alt="Ривендел - долина эльфов">
+            <div class="card-body">
+                <h5 class="card-title">Ривендел - долина эльфов</h5>
+                <p class="card-text">Хочется играть на арфе и завтракать, встречая рассвет с лордом Элрондом? Тогда вам сюда!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info" id="findtext2">
+    <h1>Почему стоит выбрать наши эко-туры?</h1>
+    <div class="aboutcontent">
+        <p>«Путешественник! Зачем брести протоптанными тропами, если я могу провести тебя тропами, по которым ходят лишь ветра да тени древних деревьев? Мои эко-туры — это не просто походы. Это пробуждение земли под ногами, разговор с камнями на языке рун и ночёвки под пологом леса, помнящего эпоху эльфов.</p>
+        <p>Я не покажу тебе «достопримечательности». Я покажу, как утро пахнет туманом над Андуином, как поёт горный поток в Мглистых горах и где спят орлы Манвэ. Ты вернёсь не с сувениром — а с семенем магического дерева в кармане и историей, что будет греть тебя долгими зимами.</p>
+        <p>Выбирай путь мудро — выбирай путь с проводником, который знает каждую тропинку в мире, и каждую звезду над ним. P.S. Орлы в стоимость не входят, но всегда могут быть… договорной опцией. 🦅✨»</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <img src="gena.jpg" alt="Гендальф" class="stat-img">
+                <span class="number">10000+</span>
+                <span class="label">лет на рынке</span>
+            </div>
+            <div class="stat">
+                <img src="1.jpg" alt="Довольные клиенты" class="stat-img">
+                <span class="number">50000+</span>
+                <span class="label">довольных клиентов</span>
+            </div>
+            <div class="stat">
+                <img src="bilbo.jpg" alt="Бильбо" class="stat-img">
+                <span class="number">99%</span>
+                <span class="label">что вы вернетесь домой живыми*</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <section class="dopuslugi">
+    <h2>Дополнительные услуги от нашей фирмы</h2>
+    <div class="catalog">
+        <div class="catalog-item">
+            <img src="phehtovanie.jpg" alt="Уроки фехтования с Эовин" class="service-img">
+            <div class="catalogbody">
+                <h3>Уроки фехтования с Эовин! Никогда не знаешь, где может пригодиться меч</h3>
+                <a href="task.html" class="search-btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img src="uslugi.jpg" alt="Конные прогулки" class="service-img">
+            <div class="catalogbody">
+                <h3>Конные прогулки по тракту. Одиночные и групповые</h3>
+                <a href="#" class="search-btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img src="usligi.jpg" alt="Восхождение на гору" class="service-img">
+            <div class="catalogbody">
+                <h3>Восхождение на гору, пешие прогулки</h3>
+                <a href="#" class="search-btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img src="bochka.jpg" alt="Водный туризм" class="service-img">
+            <div class="catalogbody">
+                <h3>Водный туризм</h3>
+                <a href="#" class="search-btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+        <section class="slider-section" id="findtext1">
+    <h2>Горящие эко-туры от Митрандира</h2>
+    <div class="slider-container">
+        <button class="slider-arrow prev">‹</button>
+        <div class="slider">
+            <div class="slide active">
+                <img src="poni.jpg" alt="poni">
+                <div class="slide-content">
+                    <h3>Гарцующий пони</h3>
+                    <p>Уютные нтропы, зелёные холмы и лучший эль в Средиземье* иногда по ночам ходят люди в плащах</p>
+                    <span class="price">от 99 золотых</span>
+                    <button class="slide-btn">Выбрать тур</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="mordor.jpg" alt="mordor">
+                <div class="slide-content">
+                    <h3>Мордор</h3>
+                    <p>Темно, жарко и могут ограбить. Для тех, кто любит экстрим</p>
+                    <span class="price">от 199 золотых</span>
+                    <button class="slide-btn">Выбрать тур</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="rohan.jpg" alt="rohan">
+                <div class="slide-content">
+                    <h3>Рохан - поле и курганы</h3>
+                    <p>Пробуем дойти до Хельмовой пади и проверить свои силы на прочность</p>
+                    <span class="price">от 149 золотых</span>
+                    <button class="slide-btn">Выбрать тур</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="erebor.jpg" alt="erebor">
+                <div class="slide-content">
+                    <h3>Эребор - помоги гномам</h3>
+                    <p>После долгого отсутсвия гномов, дракон разрушил часть жилища. Для тех кто любит эко-повестки, можно провести время с пользой!</p>
+                    <span class="price">от 129 золотых</span>
+                    <button class="slide-btn">Выбрать тур</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-arrow next">›</button>
+    </div>
+    
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+
+    </section>
+
+ <footer>
+    <a href="#" class="back-to-top">↑</a>
+    
+    <div class="footer" id="findtext">
+        <h1 id="contacts">Контакты</h1>
+        <p>Свяжитесь с нами для получения консультации</p>
+        
+        <ul>
+            <li><strong>Телефон:</strong> +7 000 000-00-00</li>
+            <li><strong>Email:</strong> mitrandir@gmail.com</li>
+            <li><strong>Адрес:</strong> Шир, улица Беггинса, дом 22</li>
+        </ul>
+    </div>
+    
+    <div class="copyright">
+        <p>© 2025 Митрандир Эко-Туры. Все права защищены.</p>
+        <p>*Вероятность возвращения живыми оценивается на основе статистики последних 1000 лет</p>
+    </div>
+</footer>
+
+
+ <script src="index.js"></script>   
+</body>
+</html>
